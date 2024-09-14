@@ -56,6 +56,9 @@ If you find this repository is useful for you, please cite our paper:
 [[Paper](https://openaccess.thecvf.com/content/WACV2024/papers/Park_Shape-Guided_Diffusion_With_Inside-Outside_Attention_WACV_2024_paper.pdf)]
 
 
+**[Pattern Recognition, 2023] Where you edit is what you get: Text-guided image editing with region-based attention**  
+*Changming Xiao, Qi Yang, Xiaoqiang Xu, Jianwei Zhang, Feng Zhou, Changshui Zhang*  
+[[Paper](https://dl.acm.org/doi/10.1016/j.patcog.2023.109458)]
 
 **[IEEE Access, 2023] Text-Guided Image Manipulation via Generative Adversarial Network With Referring Image Segmentation-Based Guidance**  
 *Yuto Watanabe, Ren Togo, Keisuke Maeda, Takahiro Ogawa, Miki Haseyama*  
@@ -122,6 +125,9 @@ If you find this repository is useful for you, please cite our paper:
 
 
 
+**[SIGGRAPH, 2022] Clip2stylegan: Unsupervised extraction of stylegan edit directions**  
+*Rameen Abdal, Peihao Zhu, John Femiani, Niloy Mitra, Peter Wonka*  
+[[Paper](https://dl.acm.org/doi/10.1145/3528233.3530747)] [[GitHub](https://github.com/RameenAbdal/CLIP2StyleGAN)]
 
 **[ACM MM, 2022] LS-GAN: Iterative Language-Based Image Manipulation via Long and Short Term Consistency Reasoning**  
 *Gaoxiang Cong, Liang Li, Zhenhuan Liu, Yunbin Tu, Weijun Qin, Shenyuan Zhang, Chengang Yan, Wenyu Wang, Bin Jiang*  
@@ -169,8 +175,6 @@ If you find this repository is useful for you, please cite our paper:
 
 
 
-
-
 **[CVPR, 2021] TediGAN: Text-guided diverse face image generation and manipulation**  
 *Weihao Xia, Yujiu Yang, Jing-Hao Xue, Baoyuan Wu*  
 [[Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Xia_TediGAN_Text-Guided_Diverse_Face_Image_Generation_and_Manipulation_CVPR_2021_paper.pdf)] [[GitHub](https://github.com/IIGROUP/TediGAN)]
@@ -203,8 +207,13 @@ If you find this repository is useful for you, please cite our paper:
 *Jing Shi, Ning Xu, Yihang Xu, Trung Bui, Franck Dernoncourt, Chenliang Xu*  
 [[Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Shi_Learning_by_Planning_Language-Guided_Global_Image_Editing_CVPR_2021_paper.pdf)] [[GitHub](https://jshi31.github.io/T2ONet/)]
 
+**[ACM, 2020] Describe what to change: A text-guided unsupervised image-to-image translation approach**  
+*Yahui Liu, Marco De Nadai, Deng Cai, Huayang Li, Xavier Alameda-Pineda, Nicu Sebe, Bruno Lepri*  
+[[Paper](https://dl.acm.org/doi/abs/10.1145/3394171.3413505)] [[GitHub](https://github.com/yhlleo/DWC-GAN)]
 
-
+**[ACM, 2020] Sequential attention GAN for interactive image editing**  
+*Yu Cheng, Zhe Gan, Yitong Li, Jingjing Liu, Jianfeng Gao*  
+[[Paper](https://dl.acm.org/doi/10.1145/3394171.3413551)]
 
 **[ACM MM, 2020] IR-GAN: Image Manipulation with Linguistic Instruction by Increment Reasoning**  
 *Zhenhuan Liu, Jincan Deng, Liang Li, Shaofei Cai, Qianqian Xu, Shuhui Wang, Qingming Huang*  
@@ -227,6 +236,9 @@ If you find this repository is useful for you, please cite our paper:
 [[Paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560086.pdf)] [[GitHub](https://github.com/xh-liu/Open-Edit)]
 
 
+**[ICCV, 2019] Tell, draw, and repeat: Generating and modifying images based on continual linguistic instruction**  
+*Alaaeldin El-Nouby, Shikhar Sharma, Hannes Schulz, Devon Hjelm, Layla El Asri, Samira Ebrahimi Kahou, Yoshua Bengio, Graham W Taylor*  
+[[Paper](https://openaccess.thecvf.com/content_ICCV_2019/papers/El-Nouby_Tell_Draw_and_Repeat_Generating_and_Modifying_Images_Based_on_ICCV_2019_paper.pdf)]
 
 **[ICASSP, 2019] Bilinear Representation for Language-based Image Editing Using Conditional Generative Adversarial Networks**  
 *Xiaofeng Mao, Yuefeng Chen, Yuhong Li, Tao Xiong, Yuan He, Hui Xue*  
@@ -235,10 +247,6 @@ If you find this repository is useful for you, please cite our paper:
 **[NeurIPS, 2018] Text-Adaptive Generative Adversarial Networks: Manipulating Images with Natural Language**  
 *Seonghyeon Nam, Yunji Kim, Seon Joo Kim*  
 [[Paper](https://proceedings.neurips.cc/paper_files/paper/2018/file/d645920e395fedad7bbbed0eca3fe2e0-Paper.pdf)] [[GitHub](https://github.com/woozzu/tagan)]
-
-**[CVPR, 2018] Language-based image editing with recurrent attentive models**  
-*Jianbo Chen, Yelong Shen, Jianfeng Gao, Jingjing Liu, Xiaodong Liu*  
-[[Paper](https://openaccess.thecvf.com/content_cvpr_2018/papers/Chen_Language-Based_Image_Editing_CVPR_2018_paper.pdf)] 
 
 **[arXiv, 2018] Interactive Image Manipulation with Natural Language Instruction Commands**  
 *Seitaro Shinagawa, Koichiro Yoshino, Sakriani Sakti, Yu Suzuki, Satoshi Nakamura*  
@@ -392,6 +400,11 @@ If you find this repository is useful for you, please cite our paper:
 **[NeurIPS, 2018] Dialog-based interactive image retrieval**  
 *Xiaoxiao Guo, Hui Wu, Yu Cheng, Steven Rennie, Gerald Tesauro, Rogerio Feris*  
 [[Paper](https://proceedings.neurips.cc/paper_files/paper/2018/file/a01a0380ca3c61428c26a231f0e49a09-Paper.pdf)] [[GitHub](https://github.com/XiaoxiaoGuo/fashion-retrieval)]
+
+**[arXiv, 2018] Learning to globally edit images with textual description**  
+*Hai Wang, Jason D Williams, SingBing Kang*  
+[[Paper](https://arxiv.org/pdf/1810.05786)]
+
 
 #2017
 
