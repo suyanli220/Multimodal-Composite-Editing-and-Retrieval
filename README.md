@@ -568,8 +568,8 @@ If you find this repository is useful for you, please cite our paper:
 | UCM_IV                          | Images, Audio Captions            | 2K images, 10K audio descriptions        | [Link](https://github.com/201528014227051/RSICD_optimal)                                           |
 | RSICD_IV                        | Image, Audio Captions             | 11K images, 55K audio descriptions       | [Link](https://github.com/201528014227051/RSICD_optimal)                                           |
 
-#Experimental Results
-##Performance comparison on the Fashion-IQ datase((VAL split)
+# Experimental Results
+## Performance comparison on the Fashion-IQ datase((VAL split)
 | **Methods**                    | **Image Encoder** | **Dress R@10** | **Dress R@50** | **Shirt R@10** | **Shirt R@50** | **Toptee R@10** | **Toptee R@50** | **Average R@10** | **Average R@50** | **Avg.** |
 |--------------------------------|--------------------|----------------|----------------|----------------|----------------|-----------------|-----------------|------------------|------------------|----------|
 | ARTEMIS+LSTM \cite{delmas2022ARTEMIS}  | ResNet-18         | 25.23          | 48.64          | 20.35          | 43.67          | 23.36           | 46.97           | 22.98            | 46.43            | 34.70    |
