@@ -567,3 +567,52 @@ If you find this repository is useful for you, please cite our paper:
 | Sydney_IV                       | RS Images, Audio Captions         | 613 images, 3K audio descriptions        | [Link](https://github.com/201528014227051/RSICD_optimal)                                           |
 | UCM_IV                          | Images, Audio Captions            | 2K images, 10K audio descriptions        | [Link](https://github.com/201528014227051/RSICD_optimal)                                           |
 | RSICD_IV                        | Image, Audio Captions             | 11K images, 55K audio descriptions       | [Link](https://github.com/201528014227051/RSICD_optimal)                                           |
+
+#Experimental Results
+##Performance comparison on the Fashion-IQ datase((VAL split)
+| **Methods**                    | **Image Encoder** | **Dress R@10** | **Dress R@50** | **Shirt R@10** | **Shirt R@50** | **Toptee R@10** | **Toptee R@50** | **Average R@10** | **Average R@50** | **Avg.** |
+|--------------------------------|--------------------|----------------|----------------|----------------|----------------|-----------------|-----------------|------------------|------------------|----------|
+| ARTEMIS+LSTM \cite{delmas2022ARTEMIS}  | ResNet-18         | 25.23          | 48.64          | 20.35          | 43.67          | 23.36           | 46.97           | 22.98            | 46.43            | 34.70    |
+| ARTEMIS+BiGRU \cite{delmas2022ARTEMIS}  | ResNet-18         | 24.84          | 49.00          | 20.40          | 43.22          | 23.63           | 47.39           | 22.95            | 46.54            | 34.75    |
+| JPM(VAL,MSE) \cite{JPM}                 | ResNet-18         | 21.27          | 43.12          | 21.88          | 43.30          | 25.81           | 50.27           | 22.98            | 45.59            | 34.29    |
+| JPM(VAL,Tri) \cite{JPM}                 | ResNet-18         | 21.38          | 45.15          | 22.81          | 45.18          | 27.78           | 51.70           | 23.99            | 47.34            | 35.67    |
+| EER \cite{EER}                         | ResNet-50         | 30.02          | 55.44          | 25.32          | 49.87          | 33.20           | 60.34           | 29.51            | 55.22            | 42.36    |
+| Ranking-aware \cite{chen2023ranking-aware} | ResNet-50         | 34.80          | 60.22          | 45.01          | 69.06          | 47.68           | 74.85           | 42.50            | 68.04            | 55.27    |
+| CRN \cite{2023-CRN}                    | ResNet-50         | 30.20          | 57.15          | 29.17          | 55.03          | 33.70           | 63.91           | 31.02            | 58.70            | 44.86    |
+| DWC \cite{huang2023-DWC}               | ResNet-50         | 32.67          | 57.96          | 35.53          | 60.11          | 40.13           | 66.09           | 36.11            | 61.39            | 48.75    |
+| DATIR \cite{zhao2022-PL4CIR_PLHMQ-twostage} | ResNet-50         | 21.90          | 43.80          | 21.90          | 43.70          | 27.20           | 51.60           | 23.70            | 46.40            | 35.05    |
+| CoSMo \cite{AMC}                      | ResNet-50         | 25.64          | 50.30          | 24.90          | 49.18          | 29.21           | 57.46           | 26.58            | 52.31            | 39.45    |
+| FashionVLP \cite{ComqueryFormer}       | ResNet-50         | 32.42          | 60.29          | 31.89          | 58.44          | 38.51           | 68.79           | 34.27            | 62.51            | 48.39    |
+| CLVC-Net \cite{wen2021-CLVC-NET}        | ResNet-50         | 29.85          | 56.47          | 28.75          | 54.76          | 33.50           | 64.00           | 30.70            | 58.41            | 44.56    |
+| SAC w/BERT \cite{jandial2021SAC}        | ResNet-50         | 26.52          | 51.01          | 28.02          | 51.86          | 32.70           | 61.23           | 29.08            | 54.70            | 41.89    |
+| SAC w/ Random Emb. \cite{jandial2021SAC} | ResNet-50         | 26.13          | 52.10          | 26.20          | 50.93          | 31.16           | 59.05           | 27.83            | 54.03            | 40.93    |
+| DCNet \cite{kim2021-DCNet}             | ResNet-50         | 28.95          | 56.07          | 23.95          | 47.30          | 30.44           | 58.29           | 27.78            | 53.89            | 40.83    |
+| AMC \cite{AMC}                        | ResNet-50         | 31.73          | 59.25          | 30.67          | 59.08          | 36.21           | 66.60           | 32.87            | 61.64            | 47.25    |
+| VAL(Lvv) \cite{Chen2020VAL}            | ResNet-50         | 21.12          | 42.19          | 21.03          | 43.44          | 25.64           | 49.49           | 22.60            | 45.04            | 33.82    |
+| ARTEMIS+LSTM \cite{delmas2022ARTEMIS}  | ResNet-50         | 27.34          | 51.71          | 21.05          | 44.18          | 24.91           | 49.87           | 24.43            | 48.59            | 36.51    |
+| ARTEMIS+BiGRU \cite{delmas2022ARTEMIS}  | ResNet-50         | 27.16          | 52.40          | 21.78          | 43.64          | 29.20           | 54.83           | 26.05            | 50.29            | 38.17    |
+| VAL(Lvv + Lvs) \cite{Chen2020VAL}      | ResNet-50         | 21.47          | 43.83          | 21.03          | 42.75          | 26.71           | 51.81           | 23.07            | 46.13            | 34.60    |
+| VAL(GloVe) \cite{Chen2020VAL}          | ResNet-50         | 22.53          | 44.00          | 22.38          | 44.15          | 27.53           | 51.68           | 24.15            | 46.61            | 35.38    |
+| AlRet \cite{xu2024-AlRet}             | ResNet-50         | 30.19          | 58.80          | 29.39          | 55.69          | 37.66           | 64.97           | 32.36            | 59.76            | 46.12    |
+| RTIC \cite{shin2021RTIC}              | ResNet-50         | 19.40          | 43.51          | 16.93          | 38.36          | 21.58           | 47.88           | 19.30            | 43.25            | 31.28    |
+| RTIC-GCN \cite{shin2021RTIC}          | ResNet-50         | 19.79          | 43.55          | 16.95          | 38.67          | 21.97           | 49.11           | 19.57            | 43.78            | 31.68    |
+| Uncertainty (CLVC-Net) \cite{chen2024uncertainty} | ResNet-50         | 30.60          | 57.46          | 31.54          | 58.29          | 37.37           | 68.41           | 33.17            | 61.39            | 47.28    |
+| Uncertainty (CLIP4CIR) \cite{chen2024uncertainty} | ResNet-50  | 32.61 | 61.34 | 33.23 | 62.55 | 41.40 | 72.51 | 35.75 | 65.47 | 50.61 |
+| CRR \cite{CRR}                      | ResNet-101 | 30.41 | 57.11 | 33.67 | 64.48 | 30.73 | 58.02 | 31.60 | 59.87 | 45.74 |
+| CIRPLANT \cite{liu2021CIRPLANT}    | ResNet-152 | 14.38 | 34.66 | 13.64 | 33.56 | 16.44 | 38.34 | 14.82 | 35.52 | 25.17 |
+| CIRPLANT w/OSCAR \cite{liu2021CIRPLANT} | ResNet-152 | 17.45 | 40.41 | 17.53 | 38.81 | 21.64 | 45.38 | 18.87 | 41.53 | 30.20 |
+| ComqueryFormer \cite{ComqueryFormer} | Swin       | 33.86 | 61.08 | 35.57 | 62.19 | 42.07 | 69.30 | 37.17 | 64.19 | 50.68 |
+| CRN \cite{2023-CRN}                 | Swin       | 30.34 | 57.61 | 29.83 | 55.54 | 33.91 | 64.04 | 31.36 | 59.06 | 45.21 |
+| CRN \cite{2023-CRN}                 | Swin-L     | 32.67 | 59.30 | 30.27 | 56.97 | 37.74 | 65.94 | 33.56 | 60.74 | 47.15 |
+| BLIP4CIR1 \cite{liu2023BLIP4CIR1}  | BLIP-B     | 43.78 | 67.38 | 45.04 | 67.47 | 49.62 | 72.62 | 46.15 | 69.15 | 57.65 |
+| CASE \cite{levy2023CASE}            | BLIP       | 47.44 | 69.36 | 48.48 | 70.23 | 50.18 | 72.24 | 48.79 | 70.68 | 59.74 |
+| BLIP4CIR2 \cite{liu2024-BLIP4CIR2} | BLIP       | 40.65 | 66.34 | 40.38 | 64.13 | 46.86 | 69.91 | 42.63 | 66.79 | 54.71 |
+| BLIP4CIR2+Bi \cite{liu2024-BLIP4CIR2} | BLIP       | 42.09 | 67.33 | 41.76 | 64.28 | 46.61 | 70.32 | 43.49 | 67.31 | 55.40 |
+| CLIP4CIR3 \cite{CLIP4CIR3}          | CLIP       | 39.46 | 64.55 | 44.41 | 65.26 | 47.48 | 70.98 | 43.78 | 66.93 | 55.36 |
+| CLIP4CIR \cite{CLIP4CIR2}           | CLIP       | 33.81 | 59.40 | 39.99 | 60.45 | 41.41 | 65.37 | 38.32 | 61.74 | 50.03 |
+| AlRet \cite{xu2024-AlRet}           | CLIP-RN50  | 40.23 | 65.89 | 47.15 | 70.88 | 51.05 | 75.78 | 46.10 | 70.80 | 58.50 |
+| Combiner \cite{baldrati2022combiner} | CLIP-RN50  | 31.63 | 56.67 | 36.36 | 58.00 | 38.19 | 62.42 | 35.39 | 59.03 | 47.21 |
+| DQU-CIR \cite{Wen_2024-DQU-CIR}     | CLIP-H     | 57.63 | 78.56 | 62.14 | 80.38 | 66.15 | 85.73 | 61.97 | 81.56 | 71.77 |
+| PL4CIR \cite{zhao2022-PL4CIR_PLHMQ-twostage} | CLIP-L     | 38.18 | 64.50 | 48.63 | 71.54 | 52.32 | 76.90 | 46.37 | 70.98 | 58.68 |
+| TG-CIR \cite{Wen_2023-TG-CIR}       | CLIP-B     | 45.22 | 69.66 | 52.60 | 72.52 | 56.14 | 77.10 | 51.32 | 73.09 | 62.21 |
+| PL4CIR \cite{zhao2022-PL4CIR_PLHMQ-twostage} | CLIP-B     | 33.22 | 59.99 | 46.17 | 68.79 | 46.46 | 73.84 | 41.98 | 67.54 | 54.76 |
