@@ -284,6 +284,9 @@ If you find this repository is useful for you, please cite our paper:
 [[Paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Suo_Knowledge-Enhanced_Dual-stream_Zero-shot_Composed_Image_Retrieval_CVPR_2024_paper.pdf)]
 
 #2023
+**[ACM, 2023] AMC: Adaptive Multi-expert Collaborative Network for Text-guided Image Retrieval**  
+*Hongguang Zhu, Yunchao Wei, Yao Zhao, Chunjie Zhang, Shujuan Huang*  
+[[Paper](https://doi.org/10.1145/3584703)] [[GitHub](https://github.com/KevinLight831/AMC)]
 
 **[CVPR, 2023] Fame-vil: Multi-tasking vision-language model for heterogeneous fashion tasks**  
 *Xiao Han, Xiatian Zhu, Licheng Yu, Li Zhang, Yi-Zhe Song, Tao Xiang*  
@@ -299,7 +302,7 @@ If you find this repository is useful for you, please cite our paper:
 
 **[arXiv, 2023] Pretrain like you inference: Masked tuning improves zero-shot composed image retrieval**  
 *Junyang Chen, Hanjiang Lai*  
-[[Paper](https://arxiv.org/abs/2311.07622)] [[GitHub](#)]
+[[Paper](https://arxiv.org/abs/2311.07622)] 
 
 **[ICCV, 2023] Zero-shot composed image retrieval with textual inversion**  
 *Alberto Baldrati, Lorenzo Agnolucci, Marco Bertini, Alberto Del Bimbo*  
